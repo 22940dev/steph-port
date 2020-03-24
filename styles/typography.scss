@@ -1,0 +1,39 @@
+/* Global typography styles
+========================================================================== */
+
+@font-face {
+  font-family: 'RomanaBT-Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RomanaBT Roman'), local('RomanaBT-Roman'),
+    url('../assets/fonts/RomanaBT-Roman.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'BureauGrotWide Light';
+  font-style: normal;
+  font-weight: 600;
+  src: local('BureauGrotWide Light'), local('BureauGrotWide-Light'),
+    url('../assets/fonts/BureauGrotWide-Light.otf') format('otf');
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $font-heading;
+  font-weight: 500;
+}
