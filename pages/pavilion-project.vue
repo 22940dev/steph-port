@@ -11,7 +11,7 @@
           <img src="../assets/images/pavilion-project/MemberCard_PAV_170131.jpg" alt />
           <img src="../assets/images/pavilion-project/Tote2-a_PAV_170131.jpg" alt />
         </div>
-        <img src="../assets/images/pavilion-project/MemberCard_PAV_170131.jpg" alt />
+        <img src="../assets/images/pavilion-project/Postcards_PAV_170131.jpg" alt />
         <div class="img-container-2">
           <img src="../assets/images/pavilion-project/Credentals_PAV_170131.jpg" alt />
           <img src="../assets/images/pavilion-project/Bags_PAV_170131.jpg" alt />

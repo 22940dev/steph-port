@@ -20,6 +20,18 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      bodyAttrs: {
+        class: 'me'
+      }
+    };
+  }
+};
+</script>
+
 <style lang="scss" scoped>
 .me {
   width: 100%;

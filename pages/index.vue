@@ -29,7 +29,10 @@ export default {
           name: 'description',
           content: "Stephanie's portfolio website."
         }
-      ]
+      ],
+      bodyAttrs: {
+        class: 'home'
+      }
     };
   }
 };
