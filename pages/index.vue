@@ -44,10 +44,19 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 90px;
+  font-size: 9rem;
   list-style: none;
   padding: 0;
   margin: 0;
+  @include respond-to('tablet') {
+    font-size: 6.9rem;
+  }
+  @media (max-width: 549px) {
+    font-size: 4.4rem;
+  }
+  @include respond-to('mobile-large') {
+    font-size: 3.9rem;
+  }
 }
 ul li a {
   /* font-size: 100vw; */

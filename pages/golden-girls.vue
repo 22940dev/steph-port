@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- <img src="../assets/images/golden-girls.jpg" alt /> -->
-    <p>hey</p>
+    <h1>69</h1>
   </div>
 </template>
 
@@ -18,12 +17,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// img {
-//   position: absolute;
-//   height: 100vh;
-//   pos
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-// }
+h1 {
+  color: $white;
+  font-size: 69rem;
+  text-align: center;
+}
 </style>

@@ -62,11 +62,8 @@ section {
       align-self: flex-end;
       margin-bottom: 0;
       position: relative;
-      right: 0rem;
       @include respond-to('desktop-13') {
-        position: initial;
-        top: 0;
-        left: 0;
+        margin-bottom: 40rem;
       }
     }
   }

@@ -79,11 +79,17 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 36rem;
+    @include respond-to('desktop-13') {
+      margin-bottom: 0rem;
+    }
     img:first-child {
       width: 100%;
       max-width: 635px;
       align-self: flex-end;
       margin-bottom: 0;
+      @include respond-to('desktop-13') {
+        margin-bottom: 20rem;
+      }
     }
     img:last-child {
       width: 100%;

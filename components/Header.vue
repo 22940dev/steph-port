@@ -5,7 +5,7 @@
         Stephanie
         <span>Firka</span>
       </nuxt-link>
-      <div>i</div>
+      <div class="line"></div>
       <nuxt-link to="/">Projects</nuxt-link>
     </nav>
   </header>
@@ -21,6 +21,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  position: relative;
   a {
     display: flex;
     flex-direction: column;
@@ -29,18 +30,10 @@ nav {
     letter-spacing: 0.261rem;
     line-height: 1.3rem;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3.5rem;
   }
   span {
     display: table;
-  }
-  div {
-    margin-bottom: 0.6rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.261rem;
-    line-height: 1.3rem;
-    text-transform: uppercase;
-    // font-family: $font-body;
   }
 }
 </style>

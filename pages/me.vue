@@ -52,6 +52,13 @@ export default {
     line-height: 7.1rem;
     font-family: $font-heading;
     letter-spacing: 0.211rem;
+    @include respond-to('tablet-large') {
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 4rem;
+      line-height: 5.1rem;
+    }
     span {
       display: table;
       margin: 0 auto;

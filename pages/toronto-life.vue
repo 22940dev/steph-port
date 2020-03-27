@@ -101,6 +101,9 @@ section {
     align-self: flex-end;
     margin-bottom: 10rem;
     margin-right: 8rem;
+    @include respond-to('tablet-large') {
+      margin-right: 0;
+    }
   }
   img:nth-of-type(4) {
     width: 100%;
