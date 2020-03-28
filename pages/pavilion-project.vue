@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="inner-wrapper">
+    <section class="inner-wrapper project">
       <h1 class="project-title">Pavilion Project</h1>
       <div class="project-credits">
         <p>Creative Direction</p>
@@ -24,7 +24,7 @@
           Stephanie
           <span>Firka</span>
         </nuxt-link>
-        <div>|</div>
+        <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
       <img src="../assets/images/next-block.jpg" class="next-project-img" />
@@ -35,10 +35,6 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  margin-bottom: 5rem;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -78,7 +74,7 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 36rem;
+    margin-bottom: 0;
     @include respond-to('desktop-13') {
       margin-bottom: 0rem;
     }
@@ -108,7 +104,7 @@ section {
     width: 100%;
     max-width: 1089px;
     align-self: flex-start;
-    margin-bottom: 25rem;
+    margin-bottom: 0;
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="inner-wrapper">
+    <section class="inner-wrapper project">
       <h1 class="project-title">Toronto Life</h1>
       <div class="project-credits">
         <div>
@@ -33,7 +33,7 @@
           Stephanie
           <span>Firka</span>
         </nuxt-link>
-        <div>|</div>
+        <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
       <img src="../assets/images/pavilion-project.jpg" class="next-project-img" />
@@ -44,10 +44,6 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  margin-bottom: 5rem;
-}
-
 .project-credits {
   display: flex;
   justify-content: space-between;
@@ -109,7 +105,7 @@ section {
     width: 100%;
     align-self: center;
     max-width: 1105px;
-    margin-bottom: 20rem;
+    margin-bottom: 0;
   }
 }
 
@@ -131,15 +127,10 @@ section {
       letter-spacing: 0.261rem;
       line-height: 1.3rem;
       text-transform: uppercase;
-      margin-bottom: 0.5rem;
       color: $white;
     }
     span {
       display: table;
-    }
-    div {
-      font-weight: 100;
-      margin-bottom: 0.5rem;
     }
   }
 }

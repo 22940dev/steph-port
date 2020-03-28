@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="inner-wrapper">
+    <section class="inner-wrapper project">
       <h1 class="project-title">Canadian Business</h1>
       <div class="project-credits">
         <p>Art Director</p>
@@ -27,7 +27,7 @@
           Stephanie
           <span>Firka</span>
         </nuxt-link>
-        <div>|</div>
+        <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
       <img src="../assets/images/nightizm.jpg" class="next-project-img" />
@@ -38,10 +38,9 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  margin-bottom: 5rem;
+.project-title {
+  line-height: 1;
 }
-
 .content {
   display: flex;
   flex-direction: column;
@@ -92,8 +91,8 @@ section {
   .img-container-2 {
     display: flex;
     align-items: flex-start;
-    // flex-wrap: wrap;
     margin-bottom: 36rem;
+    margin-bottom: 0;
     img:nth-of-type(1) {
       width: 100%;
       max-width: 364px;
@@ -119,6 +118,7 @@ section {
       top: 23rem;
       left: -12rem;
       margin: 0;
+      margin-bottom: 23rem;
     }
   }
 }

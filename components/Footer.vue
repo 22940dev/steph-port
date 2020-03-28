@@ -8,10 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-.exact-active-link {
-  color: #f04e44;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -25,6 +21,12 @@ footer {
     letter-spacing: 0.261rem;
     line-height: 1.3rem;
     text-transform: uppercase;
+    transition: 0.3s all ease;
+  }
+  a:hover,
+  a:focus {
+    letter-spacing: 8px;
+    transition: 0.3s all ease;
   }
   span {
     display: table;

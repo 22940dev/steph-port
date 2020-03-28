@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>69</h1>
+    <audio controls autoplay loop>
+      <source src="../assets/audio/the-golden-girls-theme-song-extended.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
   </div>
 </template>
 
@@ -17,9 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  color: $white;
-  font-size: 69rem;
-  text-align: center;
+audio {
+  display: none;
 }
 </style>

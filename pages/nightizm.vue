@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="inner-wrapper">
-      <h1 class="project-title">Pavilion Project</h1>
+    <section class="inner-wrapper project">
+      <h1 class="project-title">Nightizm</h1>
       <div class="project-credits">
-        <p>Creative Direction</p>
-        <p>Whitman Emerson</p>
+        <p>Client</p>
+        <p>Tristan Michael Lawrence</p>
       </div>
       <div class="content">
         <img src="../assets/images/nightizm/Nightizm-1.jpg" alt />
@@ -21,7 +21,7 @@
           Stephanie
           <span>Firka</span>
         </nuxt-link>
-        <div>|</div>
+        <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
       <img src="../assets/images/toronto-life.jpg" class="next-project-img" />
@@ -32,10 +32,6 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  margin-bottom: 5rem;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -56,7 +52,7 @@ section {
   .img-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8.5rem;
+    margin-bottom: 0;
     img:first-child {
       width: 100%;
       max-width: 557px;
@@ -70,7 +66,7 @@ section {
       align-self: center;
       position: relative;
       top: -12.5rem;
-      margin-bottom: 0;
+      margin-bottom: -12.5rem;
       @include respond-to('desktop-13') {
         position: initial;
         top: 0;

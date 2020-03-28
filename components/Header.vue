@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .exact-active-link {
-  color: #f04e44;
+  letter-spacing: 8px;
 }
 
 nav {
@@ -31,6 +31,12 @@ nav {
     line-height: 1.3rem;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
+    transition: 0.3s all ease;
+  }
+  a:hover,
+  a:focus {
+    letter-spacing: 8px;
+    transition: 0.3s all ease;
   }
   span {
     display: table;

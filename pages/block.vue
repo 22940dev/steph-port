@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="inner-wrapper">
+    <section class="inner-wrapper project">
       <h1 class="project-title">Block</h1>
       <div class="project-credits">
         <p>Creative Direction</p>
@@ -21,7 +21,7 @@
           Stephanie
           <span>Firka</span>
         </nuxt-link>
-        <div>|</div>
+        <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
       <img src="../assets/images/canadian-business.jpg" class="next-project-img" />
@@ -32,10 +32,6 @@
 </template>
 
 <style lang="scss" scoped>
-section {
-  margin-bottom: 5rem;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -71,7 +67,7 @@ section {
     width: 100%;
     max-width: 646px;
     align-self: flex-start;
-    margin-bottom: 25rem;
+    margin-bottom: 0;
   }
 }
 
