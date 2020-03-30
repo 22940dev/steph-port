@@ -13,6 +13,12 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  @include respond-to('mobile-large') {
+    margin-bottom: 4rem;
+  }
+  @include respond-to('mobile-small') {
+    margin-bottom: 3rem;
+  }
   a {
     display: flex;
     flex-direction: column;

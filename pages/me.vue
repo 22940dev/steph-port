@@ -44,6 +44,9 @@ export default {
   text-align: center;
   .intro {
     margin-bottom: 8rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 3rem;
+    }
   }
   .intro p {
     font-size: 6.5rem;
@@ -59,6 +62,22 @@ export default {
       font-size: 4rem;
       line-height: 5.1rem;
     }
+    @include respond-to('tablet') {
+      font-size: 3rem;
+      line-height: 4.1rem;
+    }
+    @include respond-to('mobile-large') {
+      font-size: 2.1rem;
+      line-height: 3rem;
+    }
+    @include respond-to('mobile') {
+      font-size: 1.9rem;
+      line-height: 2.9rem;
+    }
+    @include respond-to('mobile-small') {
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
     span {
       display: table;
       margin: 0 auto;
@@ -68,6 +87,14 @@ export default {
     font-size: 3.5rem;
     font-family: $font-heading;
     margin-bottom: 3rem;
+    @include respond-to('mobile-large') {
+      font-size: 2.7rem;
+      line-height: 3.1rem;
+    }
+    @include respond-to('mobile-small') {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
   }
   .developer {
     p {
@@ -76,10 +103,20 @@ export default {
       letter-spacing: 0.261rem;
       line-height: 1.3rem;
       text-transform: uppercase;
+      @include respond-to('mobile-large') {
+        font-size: 0.7rem;
+      }
     }
     a {
       font-family: $font-heading;
       font-size: 3.5rem;
+      @include respond-to('mobile-large') {
+        font-size: 2.7rem;
+        line-height: 3.1rem;
+      }
+      @include respond-to('mobile-small') {
+        font-size: 2.4rem;
+      }
     }
   }
 }

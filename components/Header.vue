@@ -22,6 +22,12 @@ nav {
   align-items: center;
   margin-top: 5rem;
   position: relative;
+  @include respond-to('mobile-large') {
+    margin-top: 4rem;
+  }
+  @include respond-to('mobile-small') {
+    margin-top: 3rem;
+  }
   a {
     display: flex;
     flex-direction: column;
