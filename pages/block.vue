@@ -6,13 +6,13 @@
         <p>Creative Direction</p>
         <p>Whitman Emerson</p>
       </div>
-      <div class="content">
-        <img src="../assets/images/block/Block-NEW2.2.jpg" alt />
+      <div v-lazy-container="{ selector: 'img' }" class="content">
+        <img :data-src="require('../assets/images/block/Block-NEW2.2.jpg')" alt />
         <div class="img-container">
-          <img src="../assets/images/block/6_WIP_BL_SS17_170209-1.jpg" alt />
-          <img src="../assets/images/block/6_WIP_BL_SS17_170209-3.jpg" alt />
+          <img :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-1.jpg')" alt />
+          <img :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-3.jpg')" alt />
         </div>
-        <img src="../assets/images/block/Block-NEW.2.jpg" alt />
+        <img :data-src="require('../assets/images/block/Block-NEW.2.jpg')" alt />
       </div>
     </section>
     <div class="next-project block">
@@ -24,7 +24,7 @@
         <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
-      <img src="../assets/images/canadian-business.jpg" class="next-project-img" />
+      <img v-lazy="require('../assets/images/canadian-business.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/canadian-business">Canadian Business</nuxt-link>
     </div>
@@ -51,6 +51,9 @@
       align-self: flex-start;
       position: relative;
       top: -15rem;
+      @include respond-to('mobile-large') {
+        top: 0;
+      }
     }
     img:last-child {
       width: 100%;
@@ -60,6 +63,9 @@
       position: relative;
       @include respond-to('desktop-13') {
         margin-bottom: 40rem;
+      }
+      @include respond-to('mobile-large') {
+        margin-bottom: 10rem;
       }
     }
   }

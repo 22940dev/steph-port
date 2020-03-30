@@ -6,18 +6,27 @@
         <p>Art Director</p>
         <p>John Montgomery</p>
       </div>
-      <div class="content">
-        <img src="../assets/images/canadian-business/CB17_JAN2017_HI-16.jpg" alt />
-        <img src="../assets/images/canadian-business/CB17_JAN2017_HI-17.jpg" alt />
+      <div v-lazy-container="{ selector: 'img' }" class="content">
+        <img :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-16.jpg')" alt />
+        <img :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-17.jpg')" alt />
         <div class="img-container">
-          <img src="../assets/images/canadian-business/BestPackagenew.jpg" alt />
-          <img src="../assets/images/canadian-business/BestPackage3new.jpg" alt />
+          <img :data-src="require('../assets/images/canadian-business/BestPackagenew.jpg')" alt />
+          <img :data-src="require('../assets/images/canadian-business/BestPackage3new.jpg')" alt />
         </div>
-        <img src="../assets/images/canadian-business/CB-RonWhite-white.jpg" alt />
+        <img :data-src="require('../assets/images/canadian-business/CB-RonWhite-white.jpg')" alt />
         <div class="img-container-2">
-          <img src="../assets/images/canadian-business/CB07–08_SUM2016-HI-16.jpg" alt />
-          <img src="../assets/images/canadian-business/CB07–08_SUM2016-HI-17.jpg" alt />
-          <img src="../assets/images/canadian-business/CB07–08_SUM2016-HI-20.jpg" alt />
+          <img
+            :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-16.jpg')"
+            alt
+          />
+          <img
+            :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-17.jpg')"
+            alt
+          />
+          <img
+            :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-20.jpg')"
+            alt
+          />
         </div>
       </div>
     </section>
@@ -30,7 +39,7 @@
         <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
-      <img src="../assets/images/nightizm.jpg" class="next-project-img" />
+      <img v-lazy="require('../assets/images/nightizm.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/nightizm">Nightizm</nuxt-link>
     </div>
@@ -50,17 +59,26 @@
     max-width: 1270px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   img:nth-of-type(2) {
     width: 100%;
     max-width: 900px;
     align-self: flex-start;
     margin-bottom: 30rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   .img-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 22rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 0;
+    }
     img:first-child {
       width: 100%;
       max-width: 986px;
@@ -74,10 +92,12 @@
       position: relative;
       top: -9rem;
       margin-bottom: 0;
-      @include respond-to('desktop-13') {
+      @include respond-to('tablet') {
         position: initial;
         top: 0;
         left: 0;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
       }
     }
   }
@@ -87,6 +107,13 @@
     align-self: flex-start;
     margin-bottom: 30rem;
     margin-left: 12rem;
+    @include respond-to('tablet-large') {
+      margin-left: 0;
+      align-self: center;
+    }
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   .img-container-2 {
     display: flex;

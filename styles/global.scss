@@ -67,6 +67,9 @@ body::-webkit-scrollbar-thumb {
 section.project {
   padding: 0 2.5rem;
   margin-bottom: 25rem;
+  @include respond-to('mobile-large') {
+    margin-bottom: 10rem;
+  }
 }
 
 .show {
@@ -128,10 +131,9 @@ nav .line::before {
   height: 2rem;
 }
 
-/* Animations
+/* Animations & Page Transitions
 ================================================ */
 
-// Animationss
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.5s;
@@ -169,7 +171,7 @@ nav .line::before {
     flex-direction: column;
   }
   @include respond-to('mobile-large') {
-    margin-bottom: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
   p:first-child {
     text-transform: uppercase;
@@ -224,6 +226,9 @@ nav .line::before {
   }
 }
 
+/* Home page
+================================================ */
+
 .home {
   background: #fff8f7;
   nav a:nth-of-type(2) {
@@ -241,9 +246,11 @@ nav .line::before {
   }
 }
 
+/* Me (Steph / About) page
+================================================ */
+
 .me {
   background: #f04e44;
-  //header nav
   nav a {
     color: $white;
   }
@@ -289,6 +296,9 @@ nav .line::before {
     }
   }
 }
+
+/* Golden Girls page
+================================================ */
 
 .golden-girls {
   height: 100vh;

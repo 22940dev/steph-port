@@ -6,15 +6,27 @@
         <p>Creative Direction</p>
         <p>Whitman Emerson</p>
       </div>
-      <div class="content">
+      <div v-lazy-container="{ selector: 'img' }" class="content">
         <div class="img-container">
-          <img src="../assets/images/pavilion-project/MemberCard_PAV_170131.jpg" alt />
-          <img src="../assets/images/pavilion-project/Tote2-a_PAV_170131.jpg" alt />
+          <img
+            :data-src="require('../assets/images/pavilion-project/MemberCard_PAV_170131.jpg')"
+            alt
+          />
+          <img
+            :data-src="require('../assets/images/pavilion-project/Tote2-a_PAV_170131.jpg')"
+            alt="hey"
+          />
         </div>
-        <img src="../assets/images/pavilion-project/Postcards_PAV_170131.jpg" alt />
+        <img
+          :data-src="require('../assets/images/pavilion-project/Postcards_PAV_170131.jpg')"
+          alt="hey"
+        />
         <div class="img-container-2">
-          <img src="../assets/images/pavilion-project/Credentals_PAV_170131.jpg" alt />
-          <img src="../assets/images/pavilion-project/Bags_PAV_170131.jpg" alt />
+          <img
+            :data-src="require('../assets/images/pavilion-project/Credentals_PAV_170131.jpg')"
+            alt
+          />
+          <img :data-src="require('../assets/images/pavilion-project/Bags_PAV_170131.jpg')" alt />
         </div>
       </div>
     </section>
@@ -27,7 +39,7 @@
         <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
-      <img src="../assets/images/next-block.jpg" class="next-project-img" />
+      <img v-lazy="require('../assets/images/next-block.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/block">Block</nuxt-link>
     </div>
@@ -44,6 +56,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 36rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
     img:first-child {
       width: 100%;
       max-width: 440px;
@@ -68,6 +83,9 @@
     max-width: 1260px;
     align-self: flex-start;
     margin-bottom: 24rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   .img-container-2 {
     display: flex;
@@ -85,6 +103,9 @@
       margin-bottom: 0;
       @include respond-to('desktop-13') {
         margin-bottom: 20rem;
+      }
+      @include respond-to('mobile-large') {
+        margin-bottom: 10rem;
       }
     }
     img:last-child {

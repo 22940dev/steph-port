@@ -16,15 +16,21 @@
           <p>Daniel Neuhaus</p>
         </div>
       </div>
-      <div class="content">
-        <img src="../assets/images/toronto-life/19_03_DAVD_ZILBER-1.jpg" alt />
+      <div v-lazy-container="{ selector: 'img' }" class="content">
+        <img :data-src="require('../assets/images/toronto-life/19_03_DAVD_ZILBER-1.jpg')" alt />
         <div class="img-container">
-          <img src="../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-1.jpg" alt />
-          <img src="../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-2.jpg" alt />
+          <img
+            :data-src="require('../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-1.jpg')"
+            alt
+          />
+          <img
+            :data-src="require('../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-2.jpg')"
+            alt
+          />
         </div>
-        <img src="../assets/images/toronto-life/19_06_COUCH_PEOPLE-1.jpg" alt />
-        <img src="../assets/images/toronto-life/19_05_ALEK_MINASSIAN-1.jpg" alt />
-        <img src="../assets/images/toronto-life/18_08_ANDRE_DE_GRASSE-1.jpg" alt />
+        <img :data-src="require('../assets/images/toronto-life/19_06_COUCH_PEOPLE-1.jpg')" alt />
+        <img :data-src="require('../assets/images/toronto-life/19_05_ALEK_MINASSIAN-1.jpg')" alt />
+        <img :data-src="require('../assets/images/toronto-life/18_08_ANDRE_DE_GRASSE-1.jpg')" alt />
       </div>
     </section>
     <div class="next-project pavillion">
@@ -36,7 +42,7 @@
         <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
-      <img src="../assets/images/pavilion-project.jpg" class="next-project-img" />
+      <img v-lazy="require('../assets/images/pavilion-project.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/pavilion-project">Pavilion Project</nuxt-link>
     </div>
@@ -60,12 +66,18 @@
     max-width: 900px;
     align-self: flex-end;
     margin-bottom: 24rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   .img-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 3rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
     img:first-child {
       width: 100%;
       max-width: 410px;
@@ -90,6 +102,9 @@
     max-width: 1089px;
     align-self: flex-start;
     margin-bottom: 25rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 0rem;
+    }
   }
   img:nth-of-type(3) {
     width: 100%;
@@ -99,6 +114,10 @@
     margin-right: 8rem;
     @include respond-to('tablet-large') {
       margin-right: 0;
+    }
+    @include respond-to('mobile-large') {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
     }
   }
   img:nth-of-type(4) {

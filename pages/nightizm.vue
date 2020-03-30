@@ -6,12 +6,12 @@
         <p>Client</p>
         <p>Tristan Michael Lawrence</p>
       </div>
-      <div class="content">
-        <img src="../assets/images/nightizm/Nightizm-1.jpg" alt />
-        <img src="../assets/images/nightizm/Nightizm-2.jpg" alt />
+      <div v-lazy-container="{ selector: 'img' }" class="content">
+        <img :data-src="require('../assets/images/nightizm/Nightizm-1.jpg')" alt />
+        <img :data-src="require('../assets/images/nightizm/Nightizm-2.jpg')" alt />
         <div class="img-container">
-          <img src="../assets/images/nightizm/Nightizm-3.jpg" alt />
-          <img src="../assets/images/nightizm/Nightizm-4.jpg" alt />
+          <img :data-src="require('../assets/images/nightizm/Nightizm-3.jpg')" alt />
+          <img :data-src="require('../assets/images/nightizm/Nightizm-4.jpg')" alt />
         </div>
       </div>
     </section>
@@ -24,7 +24,7 @@
         <div class="line"></div>
         <nuxt-link to="/">Projects</nuxt-link>
       </nav>
-      <img src="../assets/images/toronto-life.jpg" class="next-project-img" />
+      <img v-lazy="require('../assets/images/toronto-life.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/toronto-life">Toronto Life</nuxt-link>
     </div>
@@ -42,23 +42,44 @@
     align-self: flex-end;
     margin-right: 8rem;
     margin-bottom: 14rem;
+    @include respond-to('desktop-13') {
+      margin-right: 0;
+    }
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   img:nth-of-type(2) {
     width: 100%;
     max-width: 1169px;
     align-self: flex-start;
     margin-bottom: 30rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
   }
   .img-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    @include respond-to('mobile-large') {
+      margin-bottom: 10rem;
+    }
     img:first-child {
       width: 100%;
       max-width: 557px;
       align-self: flex-start;
       margin-left: 8rem;
       margin-bottom: 0;
+      @include respond-to('desktop-13') {
+        margin-bottom: 10rem;
+      }
+      @include respond-to('tablet') {
+        margin-left: 0;
+      }
+      @include respond-to('mobile-large') {
+        margin-bottom: 10rem;
+      }
     }
     img:last-child {
       width: 100%;
@@ -71,6 +92,9 @@
         position: initial;
         top: 0;
         left: 0;
+      }
+      @include respond-to('mobile-large') {
+        margin-bottom: -10rem;
       }
     }
   }
