@@ -10,23 +10,26 @@
         <div class="img-container">
           <img
             :data-src="require('../assets/images/pavilion-project/MemberCard_PAV_170131.jpg')"
-            alt
+            alt="Image from Pavilion Project branding designed by Stephanie Firka."
           />
           <img
             :data-src="require('../assets/images/pavilion-project/Tote2-a_PAV_170131.jpg')"
-            alt="hey"
+            alt="Image from Pavilion Project branding designed by Stephanie Firka."
           />
         </div>
         <img
           :data-src="require('../assets/images/pavilion-project/Postcards_PAV_170131.jpg')"
-          alt="hey"
+          alt="Image from Pavilion Project branding designed by Stephanie Firka."
         />
         <div class="img-container-2">
           <img
             :data-src="require('../assets/images/pavilion-project/Credentals_PAV_170131.jpg')"
-            alt
+            alt="Image from Pavilion Project branding designed by Stephanie Firka."
           />
-          <img :data-src="require('../assets/images/pavilion-project/Bags_PAV_170131.jpg')" alt />
+          <img
+            :data-src="require('../assets/images/pavilion-project/Bags_PAV_170131.jpg')"
+            alt="Image from Pavilion Project branding designed by Stephanie Firka."
+          />
         </div>
       </div>
     </section>
@@ -45,6 +48,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Stephanie Firka - Pavilion Project',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .content {

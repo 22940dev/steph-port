@@ -7,25 +7,40 @@
         <p>John Montgomery</p>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
-        <img :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-16.jpg')" alt />
-        <img :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-17.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-16.jpg')"
+          alt="Image from Canadian Business magazine designed by Stephanie Firka."
+        />
+        <img
+          :data-src="require('../assets/images/canadian-business/CB17_JAN2017_HI-17.jpg')"
+          alt="Image from Canadian Business magazine designed by Stephanie Firka."
+        />
         <div class="img-container">
-          <img :data-src="require('../assets/images/canadian-business/BestPackagenew.jpg')" alt />
-          <img :data-src="require('../assets/images/canadian-business/BestPackage3new.jpg')" alt />
+          <img
+            :data-src="require('../assets/images/canadian-business/BestPackagenew.jpg')"
+            alt="Image from Canadian Business magazine designed by Stephanie Firka."
+          />
+          <img
+            :data-src="require('../assets/images/canadian-business/BestPackage3new.jpg')"
+            alt="Image from Canadian Business magazine designed by Stephanie Firka."
+          />
         </div>
-        <img :data-src="require('../assets/images/canadian-business/CB-RonWhite-white.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/canadian-business/CB-RonWhite-white.jpg')"
+          alt="Image from Canadian Business magazine designed by Stephanie Firka."
+        />
         <div class="img-container-2">
           <img
             :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-16.jpg')"
-            alt
+            alt="Image from Canadian Business magazine designed by Stephanie Firka."
           />
           <img
             :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-17.jpg')"
-            alt
+            alt="Image from Canadian Business magazine designed by Stephanie Firka."
           />
           <img
             :data-src="require('../assets/images/canadian-business/CB07–08_SUM2016-HI-20.jpg')"
-            alt
+            alt="Image from Canadian Business magazine designed by Stephanie Firka."
           />
         </div>
       </div>
@@ -45,6 +60,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Stephanie Firka - Canadian Business',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .project-title {

@@ -17,20 +17,32 @@
         </div>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
-        <img :data-src="require('../assets/images/toronto-life/19_03_DAVD_ZILBER-1.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/toronto-life/19_03_DAVD_ZILBER-1.jpg')"
+          alt="Image from Toronto Life magazine designed by Stephanie Firka."
+        />
         <div class="img-container">
           <img
             :data-src="require('../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-1.jpg')"
-            alt
+            alt="Image from Toronto Life magazine designed by Stephanie Firka."
           />
           <img
             :data-src="require('../assets/images/toronto-life/19_02_CHEFS_ON_THE_ROAD-2.jpg')"
-            alt
+            alt="Image from Toronto Life magazine designed by Stephanie Firka."
           />
         </div>
-        <img :data-src="require('../assets/images/toronto-life/19_06_COUCH_PEOPLE-1.jpg')" alt />
-        <img :data-src="require('../assets/images/toronto-life/19_05_ALEK_MINASSIAN-1.jpg')" alt />
-        <img :data-src="require('../assets/images/toronto-life/18_08_ANDRE_DE_GRASSE-1.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/toronto-life/19_06_COUCH_PEOPLE-1.jpg')"
+          alt="Image from Toronto Life magazine designed by Stephanie Firka."
+        />
+        <img
+          :data-src="require('../assets/images/toronto-life/19_05_ALEK_MINASSIAN-1.jpg')"
+          alt="Image from Toronto Life magazine designed by Stephanie Firka."
+        />
+        <img
+          :data-src="require('../assets/images/toronto-life/18_08_ANDRE_DE_GRASSE-1.jpg')"
+          alt="Image from Toronto Life magazine designed by Stephanie Firka."
+        />
       </div>
     </section>
     <div class="next-project pavillion">
@@ -48,6 +60,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Stephanie Firka - Toronto Life',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .project-credits {

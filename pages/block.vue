@@ -7,12 +7,24 @@
         <p>Whitman Emerson</p>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
-        <img :data-src="require('../assets/images/block/Block-NEW2.2.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/block/Block-NEW2.2.jpg')"
+          alt="Image from Block magazine designed by Stephanie Firka."
+        />
         <div class="img-container">
-          <img :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-1.jpg')" alt />
-          <img :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-3.jpg')" alt />
+          <img
+            :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-1.jpg')"
+            alt="Image from Block magazine designed by Stephanie Firka."
+          />
+          <img
+            :data-src="require('../assets/images/block/6_WIP_BL_SS17_170209-3.jpg')"
+            alt="Image from Block magazine designed by Stephanie Firka."
+          />
         </div>
-        <img :data-src="require('../assets/images/block/Block-NEW.2.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/block/Block-NEW.2.jpg')"
+          alt="Image from Block magazine designed by Stephanie Firka."
+        />
       </div>
     </section>
     <div class="next-project block">
@@ -30,6 +42,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Stephanie Firka - Block',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .content {

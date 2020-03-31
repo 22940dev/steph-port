@@ -11,6 +11,14 @@
 export default {
   head() {
     return {
+      title: 'Stephanie Firka - Golden Girls',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ],
       bodyAttrs: {
         class: 'golden-girls'
       }

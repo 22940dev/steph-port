@@ -7,11 +7,23 @@
         <p>Tristan Michael Lawrence</p>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
-        <img :data-src="require('../assets/images/nightizm/Nightizm-1.jpg')" alt />
-        <img :data-src="require('../assets/images/nightizm/Nightizm-2.jpg')" alt />
+        <img
+          :data-src="require('../assets/images/nightizm/Nightizm-1.jpg')"
+          alt="Image from Nightizm branding designed by Stephanie Firka."
+        />
+        <img
+          :data-src="require('../assets/images/nightizm/Nightizm-2.jpg')"
+          alt="Image from Nightizm branding designed by Stephanie Firka."
+        />
         <div class="img-container">
-          <img :data-src="require('../assets/images/nightizm/Nightizm-3.jpg')" alt />
-          <img :data-src="require('../assets/images/nightizm/Nightizm-4.jpg')" alt />
+          <img
+            :data-src="require('../assets/images/nightizm/Nightizm-3.jpg')"
+            alt="Image from Nightizm branding designed by Stephanie Firka."
+          />
+          <img
+            :data-src="require('../assets/images/nightizm/Nightizm-4.jpg')"
+            alt="Image from Nightizm branding designed by Stephanie Firka."
+          />
         </div>
       </div>
     </section>
@@ -30,6 +42,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Stephanie Firka - Nightizm',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
+        }
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .content {

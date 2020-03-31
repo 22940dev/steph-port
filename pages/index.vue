@@ -1,21 +1,24 @@
 <template>
-  <ul class="projects">
-    <li>
-      <nuxt-link to="/toronto-life">Toronto Life</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/pavilion-project">Pavilion Project</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/block">Block</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/canadian-business">Canadian Business</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/nightizm">Nightizm</nuxt-link>
-    </li>
-  </ul>
+  <div>
+    <ul class="projects">
+      <li>
+        <nuxt-link to="/toronto-life">Toronto Life</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/pavilion-project">Pavilion Project</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/block">Block</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/canadian-business">Canadian Business</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/nightizm">Nightizm</nuxt-link>
+      </li>
+    </ul>
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -27,7 +30,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: "Stephanie's portfolio website."
+          content: 'Graphic Designer & Number One Golden Girls Fan, based in Toronto, Canada.'
         }
       ],
       bodyAttrs: {
