@@ -136,7 +136,7 @@ nav .line::before {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .page-enter,
 .page-leave-to {
@@ -193,21 +193,46 @@ nav .line::before {
   }
 }
 .next-project {
+  position: relative;
   background: $black;
   text-align: center;
-  margin-bottom: 5rem;
-  position: relative;
-  height: calc(100vh - 12.5rem);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2.5rem solid $black;
+  border-left: 2.5rem solid $black;
+  border-right: 2.5rem solid $black;
+  // top
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    position: absolute;
+    color: $white;
+    top: 0;
+    @include respond-to('mobile-small') {
+      margin-top: 4rem;
+    }
+  }
   nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.261rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    color: $white;
     margin-bottom: 3.5rem !important;
+  }
+  .nav a span {
+    display: table;
   }
   nav .line::before {
     background: $white;
   }
+  // middle image
   .next-project-img {
     width: 100%;
     max-width: 800px;
@@ -222,6 +247,32 @@ nav .line::before {
     z-index: 1;
     @include respond-to('tablet') {
       font-size: 7rem;
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 5rem;
+    @include respond-to('mobile-small') {
+      bottom: 4rem;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.261rem;
+      line-height: 1.3rem;
+      text-transform: uppercase;
+      transition: 0.3s all ease;
+      color: $white !important;
+    }
+    a:hover,
+    a:focus {
+      letter-spacing: 8px;
+      transition: 0.3s all ease;
+    }
+    span {
+      display: table;
     }
   }
 }

@@ -2,7 +2,9 @@
   <div class="wrapper">
     <Header />
     <nuxt />
-    <Footer />
+    <div v-if="activeRoute">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -14,6 +16,15 @@ export default {
   components: {
     Header,
     Footer
+  },
+  computed: {
+    activeRoute() {
+      return (
+        this.$route.name === 'index' ||
+        this.$route.name === 'me' ||
+        this.$route.name === 'golden-girls'
+      );
+    }
   }
 };
 </script>

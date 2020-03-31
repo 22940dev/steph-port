@@ -39,6 +39,13 @@
       <img v-lazy="require('../assets/images/canadian-business.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/canadian-business">Canadian Business</nuxt-link>
+
+      <footer class="footer">
+        <nuxt-link to="/golden-girls">
+          Golden
+          <span>Girls</span>
+        </nuxt-link>
+      </footer>
     </div>
   </div>
 </template>
@@ -103,37 +110,6 @@ export default {
     max-width: 646px;
     align-self: flex-start;
     margin-bottom: 0;
-  }
-}
-
-.next-project {
-  position: relative;
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    position: absolute;
-    color: $white;
-    top: 0;
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.1rem;
-      letter-spacing: 0.261rem;
-      line-height: 1.3rem;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-      color: $white;
-    }
-    span {
-      display: table;
-    }
-    div {
-      font-weight: 100;
-      margin-bottom: 0.5rem;
-    }
   }
 }
 </style>

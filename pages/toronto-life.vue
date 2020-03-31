@@ -57,6 +57,13 @@
       <img v-lazy="require('../assets/images/pavilion-project.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/pavilion-project">Pavilion Project</nuxt-link>
+
+      <footer class="footer">
+        <nuxt-link to="/golden-girls">
+          Golden
+          <span>Girls</span>
+        </nuxt-link>
+      </footer>
     </div>
   </div>
 </template>
@@ -154,32 +161,6 @@ export default {
     align-self: center;
     max-width: 1105px;
     margin-bottom: 0;
-  }
-}
-
-.next-project {
-  position: relative;
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    position: absolute;
-    color: $white;
-    top: 0;
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.1rem;
-      letter-spacing: 0.261rem;
-      line-height: 1.3rem;
-      text-transform: uppercase;
-      color: $white;
-    }
-    span {
-      display: table;
-    }
   }
 }
 </style>

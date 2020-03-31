@@ -39,6 +39,13 @@
       <img v-lazy="require('../assets/images/toronto-life.jpg')" class="next-project-img" />
 
       <nuxt-link class="next-project-link" to="/toronto-life">Toronto Life</nuxt-link>
+
+      <footer class="footer">
+        <nuxt-link to="/golden-girls">
+          Golden
+          <span>Girls</span>
+        </nuxt-link>
+      </footer>
     </div>
   </div>
 </template>
@@ -125,37 +132,6 @@ export default {
       @include respond-to('mobile-large') {
         margin-bottom: -10rem;
       }
-    }
-  }
-}
-
-.next-project {
-  position: relative;
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    position: absolute;
-    color: $white;
-    top: 0;
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.1rem;
-      letter-spacing: 0.261rem;
-      line-height: 1.3rem;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-      color: $white;
-    }
-    span {
-      display: table;
-    }
-    div {
-      font-weight: 100;
-      margin-bottom: 0.5rem;
     }
   }
 }
