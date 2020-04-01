@@ -5,7 +5,7 @@ import error from '../assets/images/error.svg';
 import loading from '../assets/images/loading.svg';
 
 Vue.use(VueLazyload, {
-  preLoad: 1,
+  preLoad: 2,
   error,
   loading,
   attempt: 1

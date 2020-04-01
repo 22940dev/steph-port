@@ -48,7 +48,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
   .intro {
     margin-bottom: 8rem;
@@ -62,7 +62,7 @@ export default {
     font-weight: 500;
     line-height: 7.1rem;
     font-family: $font-heading;
-    letter-spacing: 0.211rem;
+    letter-spacing: 0.1rem;
     @include respond-to('tablet-large') {
       width: 90%;
       max-width: 700px;
@@ -71,20 +71,20 @@ export default {
       line-height: 5.1rem;
     }
     @include respond-to('tablet') {
-      font-size: 3rem;
-      line-height: 4.1rem;
+      font-size: 4rem;
+      line-height: 5.1rem;
     }
     @include respond-to('mobile-large') {
       font-size: 2.1rem;
-      line-height: 3rem;
+      line-height: 2.5rem;
     }
     @include respond-to('mobile') {
       font-size: 1.9rem;
-      line-height: 2.9rem;
+      line-height: 2.4rem;
     }
     @include respond-to('mobile-small') {
       font-size: 1.8rem;
-      line-height: 2.7rem;
+      line-height: 2.2rem;
     }
     span {
       display: table;
@@ -96,8 +96,7 @@ export default {
     font-family: $font-heading;
     margin-bottom: 3rem;
     @include respond-to('mobile-large') {
-      font-size: 2.7rem;
-      line-height: 3.1rem;
+      font-size: 1.9rem;
     }
     @include respond-to('mobile-small') {
       font-size: 2.4rem;
@@ -112,18 +111,20 @@ export default {
       line-height: 1.3rem;
       text-transform: uppercase;
       @include respond-to('mobile-large') {
-        font-size: 0.7rem;
+        font-size: 6px;
+        line-height: 0;
       }
     }
     a {
       font-family: $font-heading;
       font-size: 3.5rem;
+      margin-bottom: 0;
       @include respond-to('mobile-large') {
-        font-size: 2.7rem;
+        font-size: 1.9rem;
         line-height: 3.1rem;
       }
       @include respond-to('mobile-small') {
-        font-size: 2.4rem;
+        // font-size: 1.6rem;
       }
     }
   }

@@ -134,14 +134,14 @@ nav .line::before {
 /* Animations & Page Transitions
 ================================================ */
 
-// .page-enter-active,
-// .page-leave-active {
-//   transition: opacity 0.3s;
-// }
-// .page-enter,
-// .page-leave-to {
-//   opacity: 0;
-// }
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 
 /* Project
 ================================================ */
@@ -225,6 +225,12 @@ nav .line::before {
     text-transform: uppercase;
     color: $white;
     margin-bottom: 3.5rem !important;
+    transition: 0.3s all ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    letter-spacing: 8px;
+    transition: 0.3s all ease;
   }
   .nav a span {
     display: table;

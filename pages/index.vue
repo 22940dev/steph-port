@@ -62,7 +62,6 @@ export default {
   }
 }
 ul li a {
-  /* font-size: 100vw; */
   text-decoration: none;
   font-family: $font-heading;
   color: #000;
