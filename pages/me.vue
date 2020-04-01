@@ -99,8 +99,8 @@ export default {
       font-size: 1.9rem;
     }
     @include respond-to('mobile-small') {
-      font-size: 2.4rem;
-      margin-bottom: 2rem;
+      // font-size: 2.4rem;
+      // margin-bottom: 2rem;
     }
   }
   .developer {
