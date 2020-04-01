@@ -4,7 +4,7 @@
       <h1 class="project-title">Block</h1>
       <div class="project-credits">
         <p>Creative Direction</p>
-        <p>Whitman Emerson</p>
+        <p>Whitman Emorson</p>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
         <img

@@ -4,7 +4,7 @@
       <h1 class="project-title">Pavilion Project</h1>
       <div class="project-credits">
         <p>Creative Direction</p>
-        <p>Whitman Emerson</p>
+        <p>Whitman Emorson</p>
       </div>
       <div v-lazy-container="{ selector: 'img' }" class="content">
         <div class="img-container">
@@ -152,7 +152,10 @@ export default {
     width: 100%;
     max-width: 1089px;
     align-self: flex-start;
-    margin-bottom: 0;
+    margin-bottom: -6rem;
+    @include respond-to('mobile-large') {
+      margin-bottom: 0;
+    }
   }
 }
 </style>

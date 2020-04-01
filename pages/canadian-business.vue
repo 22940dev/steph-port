@@ -98,6 +98,10 @@ export default {
     max-width: 1270px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    @include respond-to('tablet') {
+      width: 100%;
+      margin-bottom: 16rem;
+    }
     @include respond-to('mobile-large') {
       margin-bottom: 10rem;
     }
@@ -115,6 +119,9 @@ export default {
     display: flex;
     flex-direction: column;
     margin-bottom: 22rem;
+    @include respond-to('tablet-large') {
+      margin-bottom: 10rem;
+    }
     @include respond-to('mobile-large') {
       margin-bottom: 0;
     }
@@ -130,6 +137,7 @@ export default {
       align-self: flex-end;
       position: relative;
       top: -9rem;
+      right: 4rem;
       margin-bottom: 0;
       @include respond-to('tablet') {
         position: initial;
@@ -157,13 +165,32 @@ export default {
   .img-container-2 {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 36rem;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
+    position: relative;
+    @include respond-to('desktop-15') {
+      margin-bottom: 60rem;
+    }
+    @include respond-to('tablet-large') {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    @include respond-to('mobile-small') {
+      margin-bottom: -3.5rem;
+    }
     img:nth-of-type(1) {
       width: 100%;
       max-width: 364px;
       margin: 0;
       margin-right: 4rem;
+      @include respond-to('tablet-large') {
+        margin-right: 0;
+        margin-bottom: 20rem;
+      }
+      @include respond-to('mobile-large') {
+        margin-bottom: 10rem;
+        max-width: 100%;
+      }
     }
     img:nth-of-type(2) {
       width: 100%;
@@ -175,6 +202,13 @@ export default {
         top: 0;
         left: 0;
       }
+      @include respond-to('tablet-large') {
+        margin-bottom: 20rem;
+      }
+      @include respond-to('mobile-large') {
+        max-width: 100%;
+        margin-bottom: 10rem;
+      }
     }
     img:nth-of-type(3) {
       width: 100%;
@@ -182,9 +216,24 @@ export default {
       position: relative;
       align-self: flex-end;
       top: 23rem;
-      left: -12rem;
+      left: -17rem;
       margin: 0;
       margin-bottom: 23rem;
+      @include respond-to('desktop-15') {
+        align-self: center;
+        position: absolute;
+        top: 65rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include respond-to('tablet-large') {
+        align-self: center;
+        position: initial;
+        top: 0;
+        left: 0;
+        transform: initial;
+        margin-bottom: 0;
+      }
     }
   }
 }

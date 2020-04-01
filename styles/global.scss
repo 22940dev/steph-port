@@ -261,9 +261,19 @@ nav .line::before {
     font-family: $font-heading;
     letter-spacing: 0.1rem;
     z-index: 1;
+    transition: 0.2s all ease;
+    filter: opacity(40%);
     @include respond-to('tablet') {
       font-size: 7rem;
     }
+  }
+  .next-project-link:hover,
+  .next-project-link:focus {
+    transition: 0.2s all ease;
+    filter: opacity(100%);
+  }
+  .next-project-link:active {
+    filter: opacity(100%);
   }
   .footer {
     position: absolute;
