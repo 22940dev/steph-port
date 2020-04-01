@@ -47,6 +47,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  letter-spacing: 0.1rem;
   font-size: 9rem;
   list-style: none;
   padding: 0;
@@ -58,7 +59,10 @@ export default {
     font-size: 4.4rem;
   }
   @include respond-to('mobile-large') {
-    font-size: 3.9rem;
+    font-size: 4rem;
+  }
+  @include respond-to('mobile-small') {
+    font-size: 3.8rem;
   }
 }
 ul li a {

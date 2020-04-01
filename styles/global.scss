@@ -167,6 +167,9 @@ nav .line::before {
   @include respond-to('mobile-large') {
     font-size: 4rem;
   }
+  @include respond-to('mobile-small') {
+    font-size: 3.8rem;
+  }
 }
 .project-credits {
   text-align: center;
