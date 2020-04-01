@@ -96,11 +96,7 @@ export default {
     font-family: $font-heading;
     margin-bottom: 3rem;
     @include respond-to('mobile-large') {
-      font-size: 1.9rem;
-    }
-    @include respond-to('mobile-small') {
-      // font-size: 2.4rem;
-      // margin-bottom: 2rem;
+      font-size: 1.7rem;
     }
   }
   .developer {
@@ -120,7 +116,7 @@ export default {
       font-size: 3.5rem;
       margin-bottom: 0;
       @include respond-to('mobile-large') {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         line-height: 3.1rem;
       }
       @include respond-to('mobile-small') {

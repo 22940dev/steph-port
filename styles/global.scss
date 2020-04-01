@@ -70,6 +70,9 @@ section.project {
   @include respond-to('mobile-large') {
     margin-bottom: 10rem;
   }
+  @include respond-to('mobile-large') {
+    padding: 0 1.5rem;
+  }
 }
 
 .show {
@@ -202,6 +205,10 @@ nav .line::before {
   align-items: center;
   border-left: 2.5rem solid $black;
   border-right: 2.5rem solid $black;
+  @include respond-to('mobile-small') {
+    border-left: 1.5rem solid $black;
+    border-right: 1.5rem solid $black;
+  }
   // top
   nav {
     display: flex;
