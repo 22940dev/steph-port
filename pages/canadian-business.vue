@@ -95,9 +95,9 @@ export default {
   width: 100%;
   img:nth-of-type(1) {
     width: 95%;
-    max-width: 1270px;
+    max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
     @include respond-to('tablet') {
       width: 100%;
       margin-bottom: 16rem;
