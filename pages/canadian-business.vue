@@ -136,7 +136,7 @@ export default {
       max-width: 416px;
       align-self: flex-end;
       position: relative;
-      top: -9rem;
+      top: -9.3rem;
       right: 4rem;
       margin-bottom: 0;
       @include respond-to('tablet') {
@@ -233,6 +233,9 @@ export default {
         left: 0;
         transform: initial;
         margin-bottom: 0;
+      }
+      @include respond-to('mobile-small') {
+        margin-bottom: 3.5rem;
       }
     }
   }
